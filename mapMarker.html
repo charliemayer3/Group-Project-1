@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        
+      </script>
+      <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+      <style>
+         #map {
+          height: 400px;
+          width: 100%;
+         }
+
+
+      </style>
+    </head>
+    <body>
+      <h3>My Google Maps Demo</h3>
+      <div id="map"></div>
+      <div class="nasaInfo"></div>
+      <script>
+
+      var api_key = "xY06mF2u9EK3PyQ1DVmfelmYhIuDhNmePy05t9kn"
+
+      var nasaURL = "https://api.nasa.gov/planetary/apod?api_key=" + api_key;
+
+      $.ajax({    
+        url: nasaURL,
+        method: "GET"
+      }).then(function(response) {
+          console.log(response);
+          var nasaHeader = $("<h2 id='apodHeader'>Today's Astronomy Picture of the Day</h2>");
+          var nasaTitle = $("<div>" + response.title + "</div>");
+          var nasaImage = $("<img src='" + response.url + "' width=500px height=500px class='apodImage'>");
+          var nasaExplanation = $("<p class='apodParagraph'>" + response.explanation + "</p>");
+          $(".nasaInfo").append(nasaHeader, nasaTitle, nasaImage, nasaExplanation);
+      })
+
+      </script>
+    </body>
+  </html>
