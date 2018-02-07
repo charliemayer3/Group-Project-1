@@ -27,6 +27,10 @@
             border-color: #2c2c2c;
             white-space: nowrap;
         }
+
+        #map {
+            height: 400px;
+        }
     </style>
 
 
@@ -47,9 +51,9 @@
         <section id="section2" class="section">
             <div class="container-fluid">
                 <div class="col-md-12" id="issMap">
-                    <div class="map"></div>
+                    <div id="map"></div>
                 </div>
-                <div class="col-md-12" id="issData">
+                <div class="row" id="issData">
                     <div class="col-md-6" id="latBox">
                         <!--area for latitude box-->
                     </div>
@@ -112,7 +116,9 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='javascript/jquery.fullPage.js'></script>
 
-
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzJTw2c1l9QmjsYEqajrnZhwCpK9z7Hng">
+    </script>
 
     <script src="javascript/script.js"></script>
 
