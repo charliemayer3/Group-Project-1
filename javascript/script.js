@@ -48,7 +48,7 @@ $(document).ready(function() {
 				var newMarker = new google.maps.Marker({
 					position: newUluru,
 					map: map,
-					icon: markerImage
+					icon: markerImage,
 				});
 				$("#latBox").html("Current Latitude and Longitude that the ISS is above. <br> Latitude: " + latitude + ", Longitude: " + long);
 			})
@@ -67,15 +67,15 @@ $(document).ready(function() {
 				console.log(latitude)
 				console.log(long)
 				// initMap(latitude, long)
-				var uluru = {lat: latitude, lng: long};
+				var newUluru = {lat: latitude, lng: long};
 				map = new google.maps.Map(document.getElementById('map'), {
 					zoom: 5,
-					mapTypeId: 'satellite',
-					center: uluru
+					mapTypeId: 'hybrid',
+					center: newUluru
 				});
 				var markerImage = "https://cdn1.iconfinder.com/data/icons/all_google_icons_symbols_by_carlosjj-du/35/spaceship.png"
 				var marker = new google.maps.Marker({
-					position: uluru,
+					position: newUluru,
 					map: map,
 					icon: markerImage
 				});

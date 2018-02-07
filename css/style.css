@@ -1,3 +1,4 @@
+
 section {
   background-color: #563d7c;
 }
@@ -63,8 +64,13 @@ section {
     background-size: 100%;
   }
 
-#roversText {
-  color:black;
+.roversText {
+  font-weight: bold;
+  color:white;
+  padding-bottom: 0%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 30%;
 }
 
 #opportunityText{
@@ -73,41 +79,51 @@ section {
   margin-right:10%;
   padding-bottom:23%;
 }
+
 #slide3{
   background-image: url("http://i2.cdn.turner.com/money/dam/assets/170804180039-mars-rover-1280x720.jpg");
    background-repeat: no-repeat;
     background-size: 100%;
     color:black;
+}
 
-  }
-  #curiosityText{
+#curiosityText{
   color:black;
   margin-left:10%;
   margin-right:10%;
   padding-bottom:60%;
+}
 
-  }
-   #sidebar .list-group-item {
-            border-radius: 0;
-            background-color: #333;
-            color: #ccc;
-            border-left: 0;
-            border-right: 0;
-            border-color: #2c2c2c;
-            white-space: nowrap;
-        }
-        #map {
-            height: 400px;
-        }
-        .slideHeader {
-            padding-left:10%;
-            color:black;
-            
-        }
-        .slide{
-           background-image: url("https://www.universetoday.com/wp-content/uploads/2012/01/PIA15278_3rovers-lo_D2011_1215_D515_br2.jpg");
-          background-repeat: no-repeat;
-          background-size: 100%;
-          color:black;
+#sidebar .list-group-item {
+  border-radius: 0;
+  background-color: #333;
+  color: #ccc;
+  border-left: 0;
+  border-right: 0;
+  border-color: #2c2c2c;
+  white-space: nowrap;
+}
 
-        }
+#map {
+  height: 400px;
+}
+
+.slideHeader {
+  padding-left:10%;
+  color:black;
+}
+
+.slide {
+  background-image: url("https://www.universetoday.com/wp-content/uploads/2012/01/PIA15278_3rovers-lo_D2011_1215_D515_br2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color:black;
+}
+
+.fp-controlArrow {
+  top:calc(50% - 115px);
+}
+
+body {
+  background-color: #563D7c;
+}
