@@ -62,11 +62,6 @@ section {
    background-repeat: no-repeat;
     background-size: 100%;
   }
-
-#roversText {
-  color:black;
-}
-
 #opportunityText{
   color:white;
   margin-left:10%;
