@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        
+      </script>
+      <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+      <style>
+         #map {
+          height: 400px;
+          width: 100%;
+         }
+
+
+      </style>
+    </head>
+    <body>
+      <h3>My Google Maps Demo</h3>
+      <div id="map"></div>
+      <div id="nasaInfo"></div>
+      <p id="spiritText"> Spirit (MER-A), Mars Exploration Rover, launched on June 10, 2003 at 13:58:47 EDT and landed successfully on January 4, 2004. Nearly 6 years after the original mission limit, Spirit had covered a total distance of 7.73 km (4.80 mi) but its wheels became trapped in sand. Around January 26, 2010, NASA conceded defeat in its efforts to free the rover and stated that it would now function as a stationary science platform. The last communication received from the rover was on March 22, 2010, and NASA ceased attempts to re-establish communication on May 25, 2011. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
+
+       <p id="opportunityText"> Opportunity (MER-B), Mars Exploration Rover, launched on July 7, 2003 at 23:18:15 EDT and landed successfully on January 25, 2004. Opportunity surpassed the previous record for longevity of a surface mission to Mars as of May 20, 2010 and surpassed the previous record for distance traveled off-Earth as of July 28, 2014 by covering a total distance of 40.25 km (25.01 mi). Opportunity is still operational and mobile as of February 5, 2018. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
+
+       <p id="curiosityText">Curiosity, Mars Science Laboratory (MSL), by NASA, was launched November 26, 2011 at 10:02 EST and landed in the Aeolis Palus plain near Aeolis Mons (informally "Mount Sharp") in Gale Crater on August 6, 2012, 05:31 UTC. The Curiosity rover is still operational as of February 5, 2018. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
+
+
+      <script>
+
+      var api_key = "xY06mF2u9EK3PyQ1DVmfelmYhIuDhNmePy05t9kn"
+
+      var nasaURL = "https://api.nasa.gov/planetary/apod?api_key=" + api_key;
+
+      $.ajax({    
+        url: nasaURL,
+        method: "GET"
+      }).then(function(response) {
+          console.log(response);
+          var nasaHeader = $("<h2 id='apodHeader'>Today's Astronomy Picture of the Day</h2>");
+          var nasaTitle = $("<div>" + response.title + "</div>");
+          var nasaImage = $("<img src='" + response.url + "' width=500px height=500px id='apodImage'>");
+          var nasaExplanation = $("<p id='nasaText'>" + response.explanation + "</p>");
+          $(".nasaInfo").append(nasaHeader, nasaTitle, nasaImage, nasaExplanation);
+      })
+
+
+
+      </script>
+    </body>
+  </html>
