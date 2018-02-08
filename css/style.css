@@ -1,4 +1,3 @@
-/* DEMO styles. Not needed. */
 section {
   background-color: #563d7c;
 }
@@ -35,4 +34,100 @@ section {
 }
 #section3 {
   background-color: #563d7c;
+}
+
+#slide2{
+  background-image: url("https://pbs.twimg.com/media/DUUj7L8W4AA4qa-.jpg:large");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+
+}
+
+#spiritText{
+  color:black;
+  margin-left:10%;
+  margin-right:10%;
+}
+#h1{
+  margin-left:10%
+  margin-right:10%;
+}
+.fp-slides{
+  margin:0 -15px;
+}
+
+#slide1{
+  background-image: url("http://i.dailymail.co.uk/i/pix/2011/12/08/article-0-002D5F8600000258-269_634x415.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
+
+#roversText {
+  color:black;
+}
+
+#opportunityText{
+  color:white;
+  margin-left:10%;
+  margin-right:10%;
+  padding-bottom:23%;
+}
+#slide3{
+  background-image: url("http://i2.cdn.turner.com/money/dam/assets/170804180039-mars-rover-1280x720.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color:black;
+}
+
+#curiosityText{
+  color:black;
+  margin-left:10%;
+  margin-right:10%;
+  padding-bottom:60%;
+}
+
+#sidebar .list-group-item {
+  border-radius: 0;
+  background-color: #333;
+  color: #ccc;
+  border-left: 0;
+  border-right: 0;
+  border-color: #2c2c2c;
+  white-space: nowrap;
+}
+
+#map {
+  height: 400px;
+}
+
+.slideHeader {
+  padding-left:10%;
+  color:black;
+    
+}
+.slide{
+  background-image: url("https://www.universetoday.com/wp-content/uploads/2012/01/PIA15278_3rovers-lo_D2011_1215_D515_br2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color:black;
+
+}
+
+/*APOD section*/
+#nasaText {
+  margin-right: 70px;
+}
+
+#apodImage {
+  margin-left: 70px;
+}
+
+#nasaHeader {
+  margin-left: 70px;
+}
+
+#apodTitle {
+  margin-left :70px;
+  color: black;
 }

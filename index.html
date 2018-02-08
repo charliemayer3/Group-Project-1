@@ -29,6 +29,18 @@
         }
         #map {
             height: 400px;
+            margin-bottom: 10px;
+        }
+        #issText1 {
+            color: white;
+        }
+        #issText2 {
+            color: white;
+        }
+        #latBox {
+            font-size: 20px;
+            color: white;
+            margin: 10px;
         }
     </style>
 
@@ -41,14 +53,13 @@
             <div class="container-fluid">
                 <div class="col-md-12" id="introPage">
                     <h1>Section one</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora necessitatibus corrupti vitae optio, exercitationem amet deleniti libero quasi consectetur, temporibus quia odit, porro itaque esse reiciendis maiores! Suscipit, deserunt
-                        eos.
-                    </p>
+                    <p id="animation"></p>
                 </div>
             </div>
         </section>
         <section id="section2" class="section">
             <div class="container-fluid">
+                <h1>International Space Station (ISS)</h1>
                 <div class="col-md-12" id="issMap">
                     <div id="map"></div>
                 </div>
@@ -59,50 +70,58 @@
                     <div class="col-md-6" id="longBox">
                         <!--area for longitude box-->
                     </div>
-                    <h1>section two</h1>
+                    
                 </div>
                 <div class="col-md-6" id="issText1">
                     <div class="textCol1">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ab earum repudiandae provident, unde rerum quo exercitationem ipsum, sunt perferendis officia eaque nemo ullam saepe iure harum. Rem, officia ab.</p>
                     </div>
                 </div>
                 <div class="col-md-6" id="issText2">
                     <div class="textCol2">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis magnam, aliquam odit in laboriosam repellat labore doloribus iure provident nobis tempore perspiciatis voluptates iusto quos omnis doloremque, deserunt modi.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="section3" class="section">
             <div class="container-fluid">
+                <div class="row">
                 <div class="col-md-12" id="roverSection">
                     <div class="slide" id="slide0">
-                        <h1>Rover Homepage</h1>
+                        <h1 class="slideHeader">Rovers on Mars</h1>
+                        <div id="roversText"><p>NASA's twin robot geologists, the Mars Exploration Rovers, launched toward Mars on June 10 and July 7, 2003, in search of answers about the history of water on Mars. They landed on Mars January 3 and January 24 PST, 2004 (January 4 and January 25 UTC, 2004).</p>
+
+                        <p>The Mars Exploration Rover mission is part of NASA's Mars Exploration Program, a long-term effort of robotic exploration of the red planet. Read more at <a href="https://mars.nasa.gov/mer/overview/">NASA.</a></p></div>
+
                     </div>
                     <div class="slide" id="slide1">
-                        <h1>Opportunity Rover</h1>
+                        <h1 class="slideHeader">Opportunity Rover</h1>
                         <p id="opportunityText"> Opportunity (MER-B), Mars Exploration Rover, launched on July 7, 2003 at 23:18:15 EDT and landed successfully on January 25, 2004. Opportunity surpassed the previous record for longevity of a surface mission to Mars as of May 20, 2010 and surpassed the previous record for distance traveled off-Earth as of July 28, 2014 by covering a total distance of 40.25 km (25.01 mi). Opportunity is still operational and mobile as of February 5, 2018. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
                     </div>
                     <div class="slide" id="slide2">
-                        <h1>Spirit Rover</h1>
+                        <h1 class="slideHeader">Spirit Rover</h1>
                         <p id="spiritText"> Spirit (MER-A), Mars Exploration Rover, launched on June 10, 2003 at 13:58:47 EDT and landed successfully on January 4, 2004. Nearly 6 years after the original mission limit, Spirit had covered a total distance of 7.73 km (4.80 mi) but its wheels became trapped in sand. Around January 26, 2010, NASA conceded defeat in its efforts to free the rover and stated that it would now function as a stationary science platform. The last communication received from the rover was on March 22, 2010, and NASA ceased attempts to re-establish communication on May 25, 2011. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
                     </div>
                     <div class="slide" id="slide3">
-                        <h1>Curiosity Rover</h1>
+                        <h1 class="slideHeader">Curiosity Rover</h1>
                          <p id="curiosityText">Curiosity, Mars Science Laboratory (MSL), by NASA, was launched November 26, 2011 at 10:02 EST and landed in the Aeolis Palus plain near Aeolis Mons (informally "Mount Sharp") in Gale Crater on August 6, 2012, 05:31 UTC. The Curiosity rover is still operational as of February 5, 2018. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
                     </div>
                 </div>
             </div>
+        </div>
         </section>
         <section id="section4" class="section">
             <div class="container-fluid">
-                <div class="col-md-12" id="astroSection">
-                    <h1 id="aPodHeader">header text</h1>
-                    <div class="col-md-6" id="nasaInfo">
-                        <!--nasa image goes here-->
-                    </div>
-                    <div class="col-md-6">
-                        <p id="nasaText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit distinctio eveniet iste veniam dignissimos ea quo praesentium dolorum sunt minima quisquam perspiciatis pariatur, quas laborum eius eaque iusto asperiores.</p>
+                <div class="row">
+                    <div class="col-md-12" id="nasaHeader">
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="astroSection">
+                        <div class="col-md-6" id="nasaInfo">
+                            <!--nasa image goes here-->
+                        </div>
+                        <div class="col-md-6">
+                            <p id="nasaText"></p>
+                        </div>
                     </div>
                 </div>
             </div>
