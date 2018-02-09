@@ -83,7 +83,7 @@ $(document).ready(function() {
 		// })
 
 		var map;
-		var issNowURL = "https://api.open-notify.org/iss-now.json";
+		var issNowURL = "http://api.open-notify.org/iss-now.json";
 		// var markerImage = "<img src='spaceship.png'/>"
 
 		function getCoords() {
@@ -140,7 +140,7 @@ $(document).ready(function() {
 
 		initMap()
 
-		var inSpaceURL = "https://api.open-notify.org/astros.json";
+		var inSpaceURL = "http://api.open-notify.org/astros.json";
 
 		$.ajax({
 		  url: inSpaceURL,
