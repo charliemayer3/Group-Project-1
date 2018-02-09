@@ -7,12 +7,11 @@ body {
 }
 
 .bheight {
-  height: 100vh;
-
+    height: 100vh;
 }
 
 .container-fluid {
-  padding-bottom:10%;
+    padding-bottom: 10%;
 }
 
 video {
@@ -112,13 +111,6 @@ li {
 
 /* ---- base ---- */
 
-html,
-body {
-    width: 100%;
-    height: 100%;
-    background: #111;
-}
-
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -127,45 +119,6 @@ canvas {
     display: block;
     vertical-align: top;
     height: 100vh;
-}
-
-
-/* ---- stats.js ---- */
-
-.count-particles {
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
-
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
 }
 
 
@@ -182,116 +135,147 @@ canvas {
     background-repeat: no-repeat;
 }
 
-
 section h1,
 section h2,
 section h3 {
-  color: #fff;
-  font-size: 5vw;
-  padding-top: 50px;
+    color: #fff;
+    margin: 0 0 30px 0;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
 }
+
 section h1 small,
 section h2 small,
 section h3 small {
-  color: rgba(255, 255, 255, 0.75);
-  text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+}
+
+#issSpacing {
+    height: 80px;
+}
+
+#oppSpacing {
+    height: 80px;
+}
+
+#roverSpacing {
+    height: 80px;
+}
+
+#curiositySpacing {
+    height: 80px;
+}
+
+#spiritSpacing {
+    height: 80px;
+}
+
+#astroSpacing {
+    height: 80px;
+}
+
+.emptyText {
+    visibility: hidden;
 }
 
 
-#section5{
-  background-image: url("https://pbs.twimg.com/media/DUUj7L8W4AA4qa-.jpg:large");
+/* #section2 {
+    margin-top: 150px;
+} */
+
+#section5 {
+    background-image: url("https://pbs.twimg.com/media/DUUj7L8W4AA4qa-.jpg:large");
     background-repeat: no-repeat;
     background-size: 100%;
-    color:white;
+    color: white;
     font-size: 20px;
-
-
 }
 
-#spiritText{
-  color:white;
-  margin-left:10%;
-  margin-right:10%;
-}
-h1{
-  margin-left:10%;
-  
+#spiritText {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#section4{
-  background-image: url("http://i.dailymail.co.uk/i/pix/2011/12/08/article-0-002D5F8600000258-269_634x415.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color:white;
-  font-size: 20px;
+h1 {
+    margin-left: 10%;
+}
+
+#section4 {
+    background-image: url("http://i.dailymail.co.uk/i/pix/2011/12/08/article-0-002D5F8600000258-269_634x415.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    font-size: 20px;
 }
 
 #roversText {
-  color:white;
-  margin-left:10%;
-  margin-right:10%;
-  padding-bottom:23%;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 23%;
 }
 
-#opportunityText{
-  color:white;
-  margin-left:10%;
-  margin-right:10%;
-  padding-bottom:23%;*/
+#opportunityText {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 23%;
+    */
 }
 
-#section6{
-  background-image: url("http://i2.cdn.turner.com/money/dam/assets/170804180039-mars-rover-1280x720.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color:white;
-  font-size: 20px;
-  padding-bottom:10%;
-
+#section6 {
+    background-image: url("http://i2.cdn.turner.com/money/dam/assets/170804180039-mars-rover-1280x720.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10%;
 }
 
-#curiosityText{
-  color:white;
-  margin-left:10%;
-  margin-right:10%;
- 
+#curiosityText {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #sidebar .list-group-item {
-  border-radius: 0;
-  background-color: #333;
-  color: #ccc;
-  border-left: 0;
-  border-right: 0;
-  border-color: #2c2c2c;
-  white-space: nowrap;
+    border-radius: 0;
+    background-color: #333;
+    color: #ccc;
+    border-left: 0;
+    border-right: 0;
+    border-color: #2c2c2c;
+    white-space: nowrap;
 }
 
-#section3{
-  background-image: url("https://www.universetoday.com/wp-content/uploads/2012/01/PIA15278_3rovers-lo_D2011_1215_D515_br2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color:white;
-  font-size: 20px;
-  padding:0;
-
+#section3 {
+    background-image: url("https://www.universetoday.com/wp-content/uploads/2012/01/PIA15278_3rovers-lo_D2011_1215_D515_br2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 0;
 }
 
 #section3 #section4 #section5 #section6 {
-  height: 100vh;
-  width: 100vw
-
+    height: 100vh;
+    width: 100vw
 }
-
 
 #issText1 {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 10px 15px 30px;
 }
 
 #issText2 {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 30px 15px 10px;
 }
 
 #latBox {
@@ -304,14 +288,15 @@ h1{
     height: 40vh;
     margin-bottom: 10px;
 }
-#nasaText{
-  color:white;
-  font-size: 20px;
-  padding:10px;
+
+#nasaText {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
 }
 
 #nasaInfo {
-  padding:10px;
+    padding: 10px;
 }
 
 .chatLink {
@@ -376,50 +361,54 @@ h1{
     color: #fff;
 }
 
-    form{
-      font-family: Roboto, sans-serif;
-      max-width: 520px;
-      margin: 10px auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .msg-wrapper{
-      max-height: 400px;
-      overflow: auto;
-    }
-    .msg-wrapper em{
-      font-size: 15px;
-      padding-right: 20px;
-      font-weight: bold;
-    }
-    .msg-wrapper div{
-      font-size: 16px
-    }
+form {
+    font-family: Roboto, sans-serif;
+    max-width: 520px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-    .columns {
-     padding-left:25px;
-    }
-    
-    #nameInput, textarea {
-      width: 500px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      display: inline-block;
-    }
-    
-    .error {
-      color: red;
-      font-size: -2em
-    }
+.msg-wrapper {
+    max-height: 400px;
+    overflow: auto;
+}
 
-    input[type=submit] {
-      width:30%;
-      background-color: #cccccc;
-      border-radius:6px;
-      cursor: pointer;
-    }
+.msg-wrapper em {
+    font-size: 15px;
+    padding-right: 20px;
+    font-weight: bold;
+}
 
-    #messagesDiv {
-      color: white;
-    }
+.msg-wrapper div {
+    font-size: 16px
+}
+
+.columns {
+    padding-left: 25px;
+}
+
+#nameInput,
+textarea {
+    width: 500px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: inline-block;
+}
+
+.error {
+    color: red;
+    font-size: -2em
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #cccccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#messagesDiv {
+    color: white;
+}
