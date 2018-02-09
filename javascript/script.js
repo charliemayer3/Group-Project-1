@@ -1,17 +1,71 @@
 $(document).ready(function() { 
-	$('#fullpage').fullpage({
-    	navigation: true,
+
+	var scrollLink = $('.scroll');
+
+    // Smooth scrolling
+    scrollLink.click(function(e) {
+        e.preventDefault();
+        $('body,html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
     });
+
+    // Active link switching
+    $(window).scroll(function() {
+        var scrollbarLocation = $(this).scrollTop();
+
+        scrollLink.each(function() {
+
+            var sectionOffset = $(this.hash).offset().top - 20;
+
+            if (sectionOffset <= scrollbarLocation) {
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+            }
+        })
+    })
+
+	$("#chatBox").hide();
 		// Initialize Firebase
-		// var config = {
-		// apiKey: "AIzaSyD4yXeThDS8mZawlH8WV30Y6G_zWFoE_5k",
-		// authDomain: "group-project-1-4003d.firebaseapp.com",
-		// databaseURL: "https://group-project-1-4003d.firebaseio.com",
-		// projectId: "group-project-1-4003d",
-		// storageBucket: "group-project-1-4003d.appspot.com",
-		// messagingSenderId: "801684537187"
-		// };
-		// firebase.initializeApp(config);
+		var config = {
+		apiKey: "AIzaSyD4yXeThDS8mZawlH8WV30Y6G_zWFoE_5k",
+		authDomain: "group-project-1-4003d.firebaseapp.com",
+		databaseURL: "https://group-project-1-4003d.firebaseio.com",
+		projectId: "group-project-1-4003d",
+		storageBucket: "group-project-1-4003d.appspot.com",
+		messagingSenderId: "801684537187"
+		};
+		firebase.initializeApp(config);
+
+		var database = firebase.database();
+
+		$("#chat").on("click", function(myFunction) {
+
+  			$("#chatBox").toggle();
+ 		});
+
+
+	      $("#submit").on("click", function(event) {
+	          event.preventDefault();
+	          var name = $('#nameInput').val().trim();
+	          var text = $('#messageInput').val().trim();
+	          if (name == "" || text == "") {
+	            $(".error").text("All fields required.")
+	          }
+	          else {
+	          database.ref().push({name: name, text: text});
+	          $('#messageInput').val('');
+	          $(".error").text("")
+	          }
+	      });
+	      database.ref().on('child_added', function(snapshot) {
+	        var message = snapshot.val();
+	        displayChatMessage(message.name, message.text);
+	      });
+	      function displayChatMessage(name, text) {
+	        $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
+	        $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+	      };
 
 		// var roverPhotosURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=mast&page=1&api_key=NmKeMjPtnfZwr62CCkpaHzcy3OVNrb1v0Wi9RB1M";
 
@@ -50,6 +104,7 @@ $(document).ready(function() {
 					map: map,
 					icon: markerImage,
 				});
+				map.setCenter({lat: latitude, lng: long});
 				$("#latBox").html("Current Latitude and Longitude that the ISS is above. <br> Latitude: " + latitude + ", Longitude: " + long);
 			})
 		}
@@ -108,7 +163,7 @@ $(document).ready(function() {
           	console.log(response);
           	var nasaHeader = $("<h2 id='apodHeader'>Today's Astronomy Picture of the Day</h2>");
           	var nasaTitle = $("<div>" + response.title + "</div>");
-          	var nasaImage = $("<img src='" + response.url + "' width=500px height=500px id='apodImage'>");
+          	var nasaImage = $("<img src='" + response.url + "' width=100% height=100% id='apodImage'>");
           	$("#nasaHeader").append(nasaHeader)
           	$("#nasaText").text(response.explanation);
           	$("#nasaInfo").append(nasaTitle, nasaImage);

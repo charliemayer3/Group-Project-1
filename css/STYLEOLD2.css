@@ -7,12 +7,7 @@ body {
 }
 
 .bheight {
-  height: 100vh;
-
-}
-
-.container-fluid {
-  padding-bottom:10%;
+    height: 100vh;
 }
 
 video {
@@ -112,11 +107,9 @@ li {
 
 /* ---- base ---- */
 
-html,
-body {
+html {
     width: 100%;
     height: 100%;
-    background: #111;
 }
 
 html {
@@ -182,79 +175,99 @@ canvas {
     background-repeat: no-repeat;
 }
 
-
+section {
+  background-color: #563d7c;
+}
 section h1,
 section h2,
 section h3 {
   color: #fff;
   font-size: 5vw;
-  padding-top: 50px;
 }
 section h1 small,
 section h2 small,
 section h3 small {
   color: rgba(255, 255, 255, 0.75);
-  text-align: center;
+}
+section p,
+section a,
+section .lead {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5vw;
+}
+section a {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.75);
+}
+section {
+  background-size: cover;
+  background-position: center center;
+}
+#section1 {
+  background-color: #563d7c;
+}
+#section2 {
+  background-color: #000;
+}
+#section3 {
+  background-color: #563d7c;
 }
 
-
-#section5{
+#slide2{
   background-image: url("https://pbs.twimg.com/media/DUUj7L8W4AA4qa-.jpg:large");
-    background-repeat: no-repeat;
+   background-repeat: no-repeat;
     background-size: 100%;
-    color:white;
-    font-size: 20px;
 
 
 }
 
 #spiritText{
-  color:white;
+  color:black;
   margin-left:10%;
   margin-right:10%;
 }
-h1{
-  margin-left:10%;
-  
+#h1{
+  margin-left:10%
+  margin-right:10%;
+}
+.fp-slides{
+  margin:0 -15px;
 }
 
-#section4{
+#slide1{
   background-image: url("http://i.dailymail.co.uk/i/pix/2011/12/08/article-0-002D5F8600000258-269_634x415.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color:white;
-  font-size: 20px;
+   background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-#roversText {
+.roversText {
+  font-weight: bold;
   color:white;
+  padding-bottom: 0%;
   margin-left:10%;
   margin-right:10%;
-  padding-bottom:23%;
+  margin-top: 30%;
 }
 
 #opportunityText{
   color:white;
   margin-left:10%;
   margin-right:10%;
-  padding-bottom:23%;*/
+  padding-bottom:23%;
 }
 
-#section6{
+#slide3{
   background-image: url("http://i2.cdn.turner.com/money/dam/assets/170804180039-mars-rover-1280x720.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color:white;
-  font-size: 20px;
-  padding-bottom:10%;
-
+   background-repeat: no-repeat;
+    background-size: 100%;
+    color:black;
 }
 
 #curiosityText{
-  color:white;
+  color:black;
   margin-left:10%;
   margin-right:10%;
- 
+  padding-bottom:60%;
 }
 
 #sidebar .list-group-item {
@@ -267,51 +280,39 @@ h1{
   white-space: nowrap;
 }
 
-#section3{
+.slideHeader {
+  padding-left:10%;
+  color:black;
+}
+
+.slide {
   background-image: url("https://www.universetoday.com/wp-content/uploads/2012/01/PIA15278_3rovers-lo_D2011_1215_D515_br2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  color:white;
-  font-size: 20px;
-  padding:0;
-
+  color:black;
 }
 
-#section3 #section4 #section5 #section6 {
-  height: 100vh;
-  width: 100vw
-
+.fp-controlArrow {
+  top:calc(50% - 115px);
 }
-
 
 #issText1 {
     color: white;
-    font-size: 20px;
 }
 
 #issText2 {
     color: white;
-    font-size: 20px;
 }
 
 #latBox {
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     margin: 10px;
 }
 
 #map {
-    height: 40vh;
+    height: 400px;
     margin-bottom: 10px;
-}
-#nasaText{
-  color:white;
-  font-size: 20px;
-  padding:10px;
-}
-
-#nasaInfo {
-  padding:10px;
 }
 
 .chatLink {
@@ -375,51 +376,3 @@ h1{
     font-size: 30px;
     color: #fff;
 }
-
-    form{
-      font-family: Roboto, sans-serif;
-      max-width: 520px;
-      margin: 10px auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .msg-wrapper{
-      max-height: 400px;
-      overflow: auto;
-    }
-    .msg-wrapper em{
-      font-size: 15px;
-      padding-right: 20px;
-      font-weight: bold;
-    }
-    .msg-wrapper div{
-      font-size: 16px
-    }
-
-    .columns {
-     padding-left:25px;
-    }
-    
-    #nameInput, textarea {
-      width: 500px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      display: inline-block;
-    }
-    
-    .error {
-      color: red;
-      font-size: -2em
-    }
-
-    input[type=submit] {
-      width:30%;
-      background-color: #cccccc;
-      border-radius:6px;
-      cursor: pointer;
-    }
-
-    #messagesDiv {
-      color: white;
-    }

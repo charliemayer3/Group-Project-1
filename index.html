@@ -1,85 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>ISS Rover</title>
-    <!--normalize css-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPACE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <!--bootstrap-->
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-
-    <!--fullpage.js-->
-    <link rel='stylesheet prefetch' href='https://alvarotrigo.com/fullPage/jquery.fullPage.css'>
-
-    <!--Google Fonts-->
-
-
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Barlow+Condensed:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        #sidebar .list-group-item {
-            border-radius: 0;
-            background-color: #333;
-            color: #ccc;
-            border-left: 0;
-            border-right: 0;
-            border-color: #2c2c2c;
-            white-space: nowrap;
-        }
-
-        #map {
-            height: 400px;
-            margin-bottom: 10px;
-        }
-
-        #issText1 {
-            color: white;
-        }
-
-        #issText2 {
-            color: white;
-        }
-
-        #latBox {
-            font-size: 20px;
-            color: white;
-            margin: 10px;
-        }
-
-
-    </style>
 
 
 </head>
 
 <body>
-    <div id="fullpage">
-        <section id="section1" class="section">
-            <div class="container-fluid">
-                <div class="col-md-12" id="introPage">
-                    <h1>Section one</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora necessitatibus corrupti vitae optio, exercitationem amet deleniti libero quasi consectetur, temporibus quia odit, porro itaque esse reiciendis maiores! Suscipit, deserunt
-                        eos.
-                    </p>
+    <div class="container-fluid">
+        <header id="top">
+            <nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                         </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link scroll" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#section2">ISS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Mars Rovers
+                                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item scroll" href="#section3">Rover Overview</a>
+                                <a class="dropdown-item scroll" href="#section4">Opportunity Rover</a>
+                                <a class="dropdown-item scroll" href="#section5">Spirit Rover</a>
+                                <a class="dropdown-item scroll" href="#section6">Curiousity Rover</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#astroSection">Photo of the Day</a>
+                        </li>
+                        <button class="btn btn-sm ml-md-5 chatLink" id="chat">Chat About Space Shit</button>
+                    </ul>
+                </div>
+                <div id="chatBox">
+                    <form>
+                      <div class="row">
+                        <div class="large-12 columns">
+                          <div id='messagesDiv' class="msg-wrapper"></div>
+                          <hr />
+                         </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="large-12 columns">
+                          <span class="error"></span>
+                          <label>Name
+                            <br>
+                            <input type="text" id='nameInput' placeholder='Name' />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="large-12 columns">
+                          <label>Message
+                            <br>
+                            <textarea id='messageInput' placeholder='Message'></textarea>
+                            <input type="submit" value="Submit" id="submit">
+                          </label>
+                        </div>
+                        
+                      </div>
+
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div id="particles-js">
+            <div class="col-md-12 content" id="introPage">
+                <img class="nasaImage" src="NASA_logo.svg" />
+                <div id="scrambleText">
+                    <div id="scramble"></div>
+                    <div id="scrambleText2"></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+    <div class="container-fluid">
+
         <section id="section2" class="section">
-            <div class="container-fluid">
-                <h1>International Space Station (ISS)</h1>
+            <div class="bheight">
                 <div class="col-md-12" id="issMap">
+                    <h1>International Space Station!</h1>
                     <div id="map"></div>
                 </div>
-                <div class="row" id="issData">
-                    <div class="col-md-6" id="latBox">
-                        <!--area for latitude box-->
-                    </div>
-                    <div class="col-md-6" id="longBox">
-                        <!--area for longitude box-->
-                    </div>
-                    
+                <!-- <div class="row" id="issData"> -->
+                <div class="col-md-12" id="latBox">
+                    <!-- area for latitude box -->
                 </div>
+
+                <div class="row">
                 <div class="col-md-6" id="issText1">
                     <div class="textCol1">
                     </div>
@@ -88,64 +114,74 @@
                     <div class="textCol2">
                     </div>
                 </div>
+                </div>
             </div>
         </section>
-        <section id="section3" class="section">
-            <div class="container-fluid">
-                <div class="row">
-                <div class="col-md-12" id="roverSection">
-                    <div class="slide" id="slide0">
-                        <h1 class="slideHeader">Rovers on Mars</h1>
-                        <p class="roversText">NASA's twin robot geologists, the Mars Exploration Rovers, launched toward Mars on June 10 and July 7, 2003, in search of answers about the history of water on Mars. They landed on Mars January 3 and January 24 PST, 2004 (January 4 and January 25 UTC, 2004).<br>The Mars Exploration Rover mission is part of NASA's Mars Exploration Program, a long-term effort of robotic exploration of the red planet. Read more at <a href="https://mars.nasa.gov/mer/overview/">NASA.</a></p>
+        <section id="section3" class="section bheight">
+            <div class="col-md-12">
 
-                    </div>
-                    <div class="slide" id="slide1">
-                        <h1 class="slideHeader">Opportunity Rover</h1>
-                        <p id="opportunityText"> Opportunity (MER-B), Mars Exploration Rover, launched on July 7, 2003 at 23:18:15 EDT and landed successfully on January 25, 2004. Opportunity surpassed the previous record for longevity of a surface mission to Mars as of May 20, 2010 and surpassed the previous record for distance traveled off-Earth as of July 28, 2014 by covering a total distance of 40.25 km (25.01 mi). Opportunity is still operational and mobile as of February 5, 2018. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
-                    </div>
-                    <div class="slide" id="slide2">
-                        <h1 class="slideHeader">Spirit Rover</h1>
-                        <p id="spiritText"> Spirit (MER-A), Mars Exploration Rover, launched on June 10, 2003 at 13:58:47 EDT and landed successfully on January 4, 2004. Nearly 6 years after the original mission limit, Spirit had covered a total distance of 7.73 km (4.80 mi) but its wheels became trapped in sand. Around January 26, 2010, NASA conceded defeat in its efforts to free the rover and stated that it would now function as a stationary science platform. The last communication received from the rover was on March 22, 2010, and NASA ceased attempts to re-establish communication on May 25, 2011. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
-                    </div>
-                    <div class="slide" id="slide3">
-                        <h1 class="slideHeader">Curiosity Rover</h1>
-                         <p id="curiosityText">Curiosity, Mars Science Laboratory (MSL), by NASA, was launched November 26, 2011 at 10:02 EST and landed in the Aeolis Palus plain near Aeolis Mons (informally "Mount Sharp") in Gale Crater on August 6, 2012, 05:31 UTC. The Curiosity rover is still operational as of February 5, 2018. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
-                    </div>
-                </div>
+                <h1>Rovers on Mars</h1>
+                <p id="roversText">NASA's twin robot geologists, the Mars Exploration Rovers, launched toward Mars on June 10 and July 7, 2003, in search of answers about the history of water on Mars. They landed on Mars January 3 and January 24 PST, 2004 (January 4 and
+                    January 25 UTC, 2004).
+
+                    <br> The Mars Exploration Rover mission is part of NASA's Mars Exploration Program, a long-term effort of robotic exploration of the red planet. Read more at <a href="https://mars.nasa.gov/mer/overview/">NASA.</a></p>
+            </div>
+    </div>
+    </section>
+    <section id="section4" class="section bheight">
+        <div class="col-md-12">
+            <h1>Opportunity Rover</h1>
+            <p id="opportunityText"> Opportunity (MER-B), Mars Exploration Rover, launched on July 7, 2003 at 23:18:15 EDT and landed successfully on January 25, 2004. Opportunity surpassed the previous record for longevity of a surface mission to Mars as of May 20, 2010 and
+                surpassed the previous record for distance traveled off-Earth as of July 28, 2014 by covering a total distance of 40.25 km (25.01 mi). Opportunity is still operational and mobile as of February 5, 2018. Read more at:
+                <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
+        </div>
+    </section>
+    <section id="section5" class="section bheight">
+        <div class="col-md-12">
+            <h1>Spirit Rover</h1>
+            <p id="spiritText"> Spirit (MER-A), Mars Exploration Rover, launched on June 10, 2003 at 13:58:47 EDT and landed successfully on January 4, 2004. Nearly 6 years after the original mission limit, Spirit had covered a total distance of 7.73 km (4.80 mi) but its
+                wheels became trapped in sand. Around January 26, 2010, NASA conceded defeat in its efforts to free the rover and stated that it would now function as a stationary science platform. The last communication received from the rover was on
+                March 22, 2010, and NASA ceased attempts to re-establish communication on May 25, 2011. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
+        </div>
+    </section>
+    <section id="section6" class="section bheight">
+        <div class="col-md-12">
+            <h1>Curiosity Rover</h1>
+            <p id="curiosityText">Curiosity, Mars Science Laboratory (MSL), by NASA, was launched November 26, 2011 at 10:02 EST and landed in the Aeolis Palus plain near Aeolis Mons (informally "Mount Sharp") in Gale Crater on August 6, 2012, 05:31 UTC. The Curiosity rover
+                is still operational as of February 5, 2018. Read more at: <a href="https://en.wikipedia.org/wiki/Mars_rover">Wikipedia</a></p>
+        </div>
+    </section>
+    <section id="section7" class="section bheight">
+        <h2 id="nasaHeader"></h2>
+        <div class="row" id="astroSection">
+            <div class="col-md-6" id="nasaInfo">
+                <!--nasa image goes here-->
+            </div>
+            <div class="col-md-6">
+                <p id="nasaText"></p>
             </div>
         </div>
-        </section>
-        <section id="section4" class="section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12" id="nasaHeader">
-                </div>
-                <div class="row">
-                    <div class="col-md-12" id="astroSection">
-                        <div class="col-md-6" id="nasaInfo">
-                            <!--nasa image goes here-->
-                        </div>
-                        <div class="col-md-6">
-                            <p id="nasaText"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </section>
+    </div>
     </div>
 
 
 
-
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='javascript/jquery.fullPage.js'></script>
-
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzJTw2c1l9QmjsYEqajrnZhwCpK9z7Hng">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="javascript/particles.min.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/ScrambleTextPlugin.js"></script>
+    <script src="javascript/TweenMax.js"></script>
+    <script src="javascript/TimeLineMax.js"></script>
+    <script src="javascript/text.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzJTw2c1l9QmjsYEqajrnZhwCpK9z7Hng">
     </script>
 
-    <script src="javascript/script.js"></script>
-
+    <script src="javascript/script.js "></script>
 </body>
 
 </html>
