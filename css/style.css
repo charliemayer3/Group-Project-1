@@ -1,27 +1,27 @@
 body {
-    margin: 0;
-    background-color: #0e1127;
-    width: 100%;
-    height: 100%;
-    font-family: 'Barlow Condensed', sans-serif;
+  margin: 0;
+  background-color: #0e1127;
+  width: 100%;
+  height: 100%;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .bheight {
-    height: 100vh;
+  height: 100vh;
 }
 
 .container-fluid {
-    padding-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
 }
 
 article,
@@ -35,72 +35,72 @@ hgroup,
 menu,
 nav,
 section {
-    display: block
+  display: block
 }
 
 nav ul {
-    list-style: none
+  list-style: none
 }
 
 blockquote,
 q {
-    quotes: none
+  quotes: none
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: none
+  content: none
 }
 
 a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    text-decoration: none
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none
 }
 
 mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold
 }
 
 del {
-    text-decoration: line-through
+  text-decoration: line-through
 }
 
 abbr[title],
 dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help
+  border-bottom: 1px dotted;
+  cursor: help
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0
+  border-collapse: collapse;
+  border-spacing: 0
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0
 }
 
 input,
 select {
-    vertical-align: middle
+  vertical-align: middle
 }
 
 li {
-    list-style: none
+  list-style: none
 }
 
 
@@ -112,71 +112,71 @@ li {
 /* ---- base ---- */
 
 html {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 canvas {
-    display: block;
-    vertical-align: top;
-    height: 100vh;
+  display: block;
+  vertical-align: top;
+  height: 100vh;
 }
 
 
 /* ---- particles.js container ---- */
 
 #particles-js {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #0e1127;
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #0e1127;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 section h1,
 section h2,
 section h3 {
-    color: #fff;
-    margin: 0 0 30px 0;
-    font-size: 50px;
-    font-family: 'Anton', sans-serif;
+  color: #fff;
+  margin: 0 0 30px 0;
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
 }
 
 section h1 small,
 section h2 small,
 section h3 small {
-    color: rgba(255, 255, 255, 0.75);
-    text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
 }
 
 #issSpacing {
-    height: 80px;
+  height: 80px;
 }
 
 #oppSpacing {
-    height: 80px;
+  height: 80px;
 }
 
 #roverSpacing {
-    height: 80px;
+  height: 80px;
 }
 
 #curiositySpacing {
-    height: 80px;
+  height: 80px;
 }
 
 #spiritSpacing {
-    height: 80px;
+  height: 80px;
 }
 
 #astroSpacing {
-    height: 80px;
+  height: 80px;
 }
 
 .emptyText {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 
@@ -185,230 +185,229 @@ section h3 small {
 } */
 
 #section5 {
-    background-image: url("https://pbs.twimg.com/media/DUUj7L8W4AA4qa-.jpg:large");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: white;
-    font-size: 20px;
+  background-image: url("https://pbs.twimg.com/media/DUUj7L8W4AA4qa-.jpg:large");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-size: 20px;
 }
 
 #spiritText {
-    color: white;
-    margin-left: 10%;
-    margin-right: 10%;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 h1 {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 #section4 {
-    background-image: url("http://i.dailymail.co.uk/i/pix/2011/12/08/article-0-002D5F8600000258-269_634x415.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: white;
-    font-size: 20px;
+  background-image: url("http://i.dailymail.co.uk/i/pix/2011/12/08/article-0-002D5F8600000258-269_634x415.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-size: 20px;
 }
 
 #roversText {
-    color: white;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 23%;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 23%;
 }
 
 #opportunityText {
-    color: white;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 23%;
-    */
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 23%;
 }
 
 #section6 {
-    background-image: url("http://i2.cdn.turner.com/money/dam/assets/170804180039-mars-rover-1280x720.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: white;
-    font-size: 20px;
-    padding-bottom: 10%;
+  background-image: url("http://i2.cdn.turner.com/money/dam/assets/170804180039-mars-rover-1280x720.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 10%;
 }
 
 #curiosityText {
-    color: white;
-    margin-left: 10%;
-    margin-right: 10%;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #sidebar .list-group-item {
-    border-radius: 0;
-    background-color: #333;
-    color: #ccc;
-    border-left: 0;
-    border-right: 0;
-    border-color: #2c2c2c;
-    white-space: nowrap;
+  border-radius: 0;
+  background-color: #333;
+  color: #ccc;
+  border-left: 0;
+  border-right: 0;
+  border-color: #2c2c2c;
+  white-space: nowrap;
 }
 
 #section3 {
-    background-image: url("https://www.universetoday.com/wp-content/uploads/2012/01/PIA15278_3rovers-lo_D2011_1215_D515_br2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: white;
-    font-size: 20px;
-    padding: 0;
+  background-image: url("https://www.universetoday.com/wp-content/uploads/2012/01/PIA15278_3rovers-lo_D2011_1215_D515_br2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-size: 20px;
+  padding: 0;
 }
 
 #section3 #section4 #section5 #section6 {
-    height: 100vh;
-    width: 100vw
+  height: 100vh;
+  width: 100vw
 }
 
 #issText1 {
-    color: white;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 10px 10px 15px 30px;
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 10px 15px 30px;
 }
 
 #issText2 {
-    color: white;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 10px 30px 15px 10px;
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 30px 15px 10px;
 }
 
 #latBox {
-    font-size: 24px;
-    color: white;
-    margin: 10px;
+  font-size: 24px;
+  color: white;
+  margin: 10px;
 }
 
 #map {
-    height: 40vh;
-    margin-bottom: 10px;
+  height: 40vh;
+  margin-bottom: 10px;
 }
 
 #nasaText {
-    color: white;
-    font-size: 20px;
-    padding: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
 }
 
 #nasaInfo {
-    padding: 10px;
+  padding: 10px;
 }
 
 .chatLink {
-    text-align: center;
-    background-color: #fff;
-    float: right;
+  text-align: center;
+  background-color: #fff;
+  float: right;
 }
 
 .nasaImage {
-    top: 100px;
-    text-align: center;
-    height: 300px;
-    width: auto;
-    position: absolute;
+  top: 100px;
+  text-align: center;
+  height: 300px;
+  width: auto;
+  position: absolute;
 }
 
 .scrambleText {
-    text-align: left;
+  text-align: left;
 }
 
 #scramble {
-    background-color: transparent;
-    font-family: 'Anton', sans-serif;
-    color: #fff;
-    padding: 10px;
-    font-size: 26px;
-    line-height: 60px;
-    z-index: 1000;
-    position: absolute;
-    top: 420px;
-    text-align: left;
+  background-color: transparent;
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+  padding: 10px;
+  font-size: 26px;
+  line-height: 60px;
+  z-index: 1000;
+  position: absolute;
+  top: 420px;
+  text-align: left;
 }
 
 #scrambleText2 {
-    background-color: transparent;
-    font-family: 'Anton', sans-serif;
-    color: #fff;
-    padding: 10px;
-    font-size: 26px;
-    line-height: 60px;
-    z-index: 1000;
-    position: absolute;
-    top: 520px;
-    text-align: left;
+  background-color: transparent;
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+  padding: 10px;
+  font-size: 26px;
+  line-height: 60px;
+  z-index: 1000;
+  position: absolute;
+  top: 520px;
+  text-align: left;
 }
 
 #introPage {
-    text-align: center;
+  text-align: center;
 }
 
 #textblock {
-    height: 140px;
+  height: 140px;
 }
 
 .orange {
-    color: #f60;
+  color: #f60;
 }
 
 .content h1 {
-    margin: 10px 0 0 0;
-    font-size: 30px;
-    color: #fff;
+  margin: 10px 0 0 0;
+  font-size: 30px;
+  color: #fff;
 }
 
 form {
-    font-family: Roboto, sans-serif;
-    max-width: 520px;
-    margin: 10px auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  font-family: Roboto, sans-serif;
+  max-width: 520px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .msg-wrapper {
-    max-height: 400px;
-    overflow: auto;
+  max-height: 400px;
+  overflow: auto;
 }
 
 .msg-wrapper em {
-    font-size: 15px;
-    padding-right: 20px;
-    font-weight: bold;
+  font-size: 15px;
+  padding-right: 20px;
+  font-weight: bold;
 }
 
 .msg-wrapper div {
-    font-size: 16px
+  font-size: 16px
 }
 
 .columns {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 #nameInput,
 textarea {
-    width: 500px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: inline-block;
+  width: 500px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: inline-block;
 }
 
 .error {
-    color: red;
-    font-size: -2em
+  color: red;
+  font-size: -2em
 }
 
 input[type=submit] {
-    width: 30%;
-    background-color: #cccccc;
-    border-radius: 6px;
-    cursor: pointer;
+  width: 30%;
+  background-color: #cccccc;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 #messagesDiv {
-    color: white;
+  color: white;
 }
