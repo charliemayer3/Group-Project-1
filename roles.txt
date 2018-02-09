@@ -1,0 +1,14 @@
+	Charlie	
+1. Intro of team members, roles, team name, and project concept/motivation/process.
+	Nicole
+2. Explaining the new technology and showing our landing page.
+	Charlie
+3. Showing the ISS page and explaining the js to it
+	Mason
+4. Showing the rovers page and CSS
+	Deegii
+5. Showing the image of the day and associated JS.
+	Deegii
+6. Showing the chat box/firebase.
+	Mason
+7. Plans/goals for potential development - Hubbel, other exploration equipment, photo slide? etc.
